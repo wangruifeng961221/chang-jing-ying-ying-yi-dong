@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>场景应用H5</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--重置样式表-->
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <!--swiper插件封装好的css样式表-->
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <!--我们页面需要用到的样式表-->
+    <link rel="stylesheet" href="css/H5index.css"/>
+</head>
+<body>
+<!--music-->
+<div class="music musicMove" id="music"></div>
+<audio class="audioMusic" id="audioMusic" src="audio/music.mp3" preload="none" loop></audio>
+<!--
+src  音频的路径
+autoplay  自动播放
+loop  循环播放
+preload 音频是否有预加载的效果
+    auto - 当页面加载后载入整个音频
+    meta - 当页面加载后只载入元数据
+    none - 当页面加载后不载入音频
+play();   音频播放
+pause();  音频暂停
+paused;   暂停的状态
+canplay   缓冲到音频可以播放的状态
+-->
+
+
+
+
+<div class="swiper-container">
+    <!--图片-->
+    <div class="swiper-wrapper">
+        <!--第一屏-->
+        <div class="swiper-slide page01">
+            <img src="images/page1-text1.png" alt=""/>
+            <img src="images/page1-text2.png" alt=""/>
+            <img src="images/page1-text3.png" alt=""/>
+            <img src="images/page1-text4.png" alt=""/>
+        </div>
+        <!--第二屏-->
+        <div class="swiper-slide page02">
+            <img src="images/page2-text1.png" alt=""/>
+            <img src="images/page2-text2.png" alt=""/>
+            <img src="images/page2-text3.png" alt=""/>
+            <img src="images/page2-text4.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+
+<!--arrow-->
+<div class="arrow"></div>
+<!--swiper 插件封装好的js文件-->
+<script charset="utf-8" type="text/javascript" src="js/swiper.min.js"></script>
+<!--解决移动端click事件300ms延迟的问题-->
+<script charset="utf-8" type="text/javascript" src="js/fastclick.min.js"></script>
+<!--我们页面需要用要的js文件-->
+<script charset="utf-8" type="text/javascript" src="js/H5index.js"></script>
+</body>
+</html>
